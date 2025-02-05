@@ -48,10 +48,7 @@ function get(string $name):mixed
     }
 
     return null;
-}
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 function getPendingCount(PDO $db):int
 {
     $statement = $db->prepare("SELECT COUNT(*) FROM todos WHERE done = 0");
@@ -81,8 +78,5 @@ function uncheckTask(int $id, PDO $db):void
     $statement->bindParam(':id', $id);
     $statement->execute();
 }
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 ?>
