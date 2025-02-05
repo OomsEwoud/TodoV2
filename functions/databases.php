@@ -48,7 +48,7 @@ function get(string $name):mixed
     }
 
     return null;
-
+}
 function getPendingCount(PDO $db):int
 {
     $statement = $db->prepare("SELECT COUNT(*) FROM todos WHERE done = 0");
